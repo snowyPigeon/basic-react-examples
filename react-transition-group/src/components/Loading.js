@@ -13,7 +13,7 @@ function Loading({setShowModal}) {
       <CSSTransition
         in={loading}
         appear={loading}
-        timeout={1000}
+        timeout={500}
         classNames="loading"
         unmountOnExit
         onEnter={() => lagSimulation()}
