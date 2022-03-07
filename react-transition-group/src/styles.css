@@ -56,3 +56,39 @@
   transform: scale(0.9);
   transition: opacity 1000ms, transform 1000ms;
 }
+
+.loading {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  border-radius: 10%;
+}
+
+.loading-enter {
+  opacity: 1;
+  transform: scale(0.9);
+}
+
+.loading-appear {
+  opacity: 1;
+  transform: scale(0.9);
+}
+
+.loading-active {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: opacity 500ms, transform 500ms;
+}
+.loading-active {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: opacity 500ms, transform 500ms;
+}
+.loading-exit {
+  opacity: 1;
+}
+.loading-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1000ms, transform 1000ms;
+}

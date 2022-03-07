@@ -3,9 +3,8 @@ import { CSSTransition } from "react-transition-group";
 import { Button, Modal } from "react-bootstrap";
 import Animation2 from "./Animation2";
 
-function Animation1() {
+function Animation1({showModal, setShowModal}) {
   const [loggedIn, setIsLoggedIn] = useState(false);
-  const [showModal, setShowModal] = useState(true);
   const [showAlert, setShowAlert] = useState(false);
   const handleModalClose = () => {
     setShowModal(false);
