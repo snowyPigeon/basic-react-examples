@@ -96,3 +96,29 @@
 .centralised {
   margin: auto !important;
 }
+
+/* Full screen wrapper for custom spinner */
+.custom-spinner {
+  position: fixed;
+  top: 0; left: 0; z-index: 9999;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.2s;
+}
+
+/* Center loading spinner */
+.spinner-img {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%);
+}
+
+/* Show and hide */
+.custom-spinner {
+  visibility: hidden;
+  opacity: 0;
+}
+.custom-spinner-show {
+  visibility: visible;
+  opacity: 1;
+}
