@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Container } from "react-bootstrap";
 import { CSSTransition } from "react-transition-group";
 
 function Loading({setShowModal}) {
@@ -9,7 +10,7 @@ function Loading({setShowModal}) {
   }
 
   return (
-    <>
+    <Container fluid>
       <CSSTransition
         in={loading}
         appear={loading}
@@ -19,8 +20,8 @@ function Loading({setShowModal}) {
         onEnter={() => lagSimulation()}
         onEntered={() => timedOut && setShowLoading(false)}
         onExited={() => setShowModal(true)}
-      ><div className="loading"></div></CSSTransition>
-    </>
+      ><div className="loading centralised"></div></CSSTransition>
+    </Container>
   );
 }
 

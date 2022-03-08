@@ -92,3 +92,7 @@
   transform: scale(0.9);
   transition: opacity 500ms, transform 500ms;
 }
+
+.centralised {
+  margin: auto !important;
+}

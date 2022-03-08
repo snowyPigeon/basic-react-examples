@@ -7,11 +7,11 @@ function Example() {
   const [showMessage, setShowMessage] = useState(false);
 
   return (
-    <Container style={{ paddingTop: "2rem" }}>
+    <Container fluid style={{ paddingTop: "2rem" }}>
       {showButton && (
-        <Button onClick={() => setShowMessage(true)} size="lg">
-          Show Message
-        </Button>
+        <div className="d-grid gap-2"><Button onClick={() => setShowMessage(true)} size="lg" className="centralised">
+        Show Message
+      </Button></div>
       )}
       <CSSTransition
         in={showMessage}
