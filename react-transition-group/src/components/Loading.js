@@ -20,7 +20,7 @@ function Loading({setShowModal}) {
         onEnter={() => lagSimulation()}
         onEntered={() => timedOut && setShowLoading(false)}
         onExited={() => setShowModal(true)}
-      ><div className="loading centralised"></div></CSSTransition>
+      ><div className="loading centralised"><p style={{position: "relative", top: "70px"}}>Loading...</p></div></CSSTransition>
     </Container>
   );
 }

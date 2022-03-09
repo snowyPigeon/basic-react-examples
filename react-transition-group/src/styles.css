@@ -62,6 +62,12 @@
   width: 200px;
   background-color: aqua;
   border-radius: 10%;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 0.1rem 0.1rem gray;
+  font-size: x-large;
+  
 }
 
 .loading-enter {

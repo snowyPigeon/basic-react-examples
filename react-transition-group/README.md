@@ -28,7 +28,7 @@ This example follows the tutorial at [Code Boxx](https://code-boxx.com/full-scre
 ## Learning points
 I found that combining multiple CSSTransition components in the same file created errors, but putting the modal transition (Animation1) and the alert transition (Animation2) in separate component files provided a workable solution.
 
-CSSTransition by default does not provide an animation when the transition loads, so I used the Transition prop appear. This appears to work for my first animation but not for the follow on.
+CSSTransition by default does not provide an animation when the transition loads, so I used the Transition prop appear. 
 
 To create a time delayed event, you can pass state controlling functions to setTimeout() and pass the true or false state values as a parameter following your number of milliseconds. For example:
 
