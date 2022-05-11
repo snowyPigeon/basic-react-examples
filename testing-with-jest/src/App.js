@@ -1,7 +1,14 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [theme, setTheme] = useState("light");
+  const toggleTheme = () => {
+    const nextTheme = theme === "light" ? "dark" : "light";
+    setTheme(nextTheme);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,7 +24,9 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={toggleTheme}>Current theme: {theme}</button>
       </header>
+      
     </div>
   );
 }
